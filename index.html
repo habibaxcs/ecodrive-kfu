@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Drive نادي</title>
+ <link rel="stylesheet" href="Style_Sheet_.css">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand" onclick="switchPage('home')">
+    <img src="Eco_DriveLogo.png" alt="home" title="Go to HomePge">
+    <span class="nav-brand-text">Eco <span>Drive</span></span>
+  </div>
+  <div class="nav-links">
+    <a id="nav-home" class="active" onclick="switchPage('home')">الرئيسية</a>
+    <a id="nav-about" onclick="switchPage('about')">من نحن</a>
+  </div>
+</nav>
+
+<!-- ============================= HOME PAGE ============================= -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="grid-bg"></div>
+    <div class="glow"></div>
+    <div class="hero-inner">
+
+      <!-- Text -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--lime)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          نادي كلية الهندسة &bull; جامعة الملك فيصل &bull; 2026
+        </div>
+        <h1 class="hero-title">نادي <span class="eco">ECO</span><span class="drive"> Drive</span></h1>
+        <p class="hero-sub">هدفنا تحويل المعرفة الهندسية إلى مشاريع وتطبيقات واقعية في مجالات الروبوتات والأنظمة المدمجة والطاقة والتقنيات الذكية.</p>
+        <a class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg> اكتشف مشاريعنا</a>
+        <div class="hero-stats">
+          <div><div class="stat-num">26</div><div class="stat-label">عضو نشط</div></div>
+          <div><div class="stat-num">3</div><div class="stat-label">مشروع مميز</div></div>
+        </div>
+      </div>
+
+      <!-- Video — left (RTL order 2) -->
+      <div class="hero-video-wrap">
+        <video id="hero-video" autoplay muted loop playsinline>
+          <source src="Video.mp4" type="video/mp4">
+        </video>
+        <div class="video-fallback" id="video-fallback">
+          <span style="font-size:3rem;color:#333;">▶</span>
+          <span style="font-size:0.75rem;color:#555;">ECO_DRIVE.mp4</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TICKER — after hero -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>ROBOTICS</span><span>AUTONOMOUS SYSTEMS</span><span>3D PRINTING</span>
+      <span>AI APPLICATIONS</span><span>IOT</span><span>ELECTRIC VEHICLES</span>
+      <span>DRONES</span><span>EMBEDDED SYSTEMS</span>
+      <span>ROBOTICS</span><span>AUTONOMOUS SYSTEMS</span><span>3D PRINTING</span>
+      <span>AI APPLICATIONS</span><span>IOT</span><span>ELECTRIC VEHICLES</span>
+      <span>DRONES</span><span>EMBEDDED SYSTEMS</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ABOUT MINI SECTION -->
+  <section class="section-about">
+    <div>
+      <div class="section-label">مجالات النادي</div>
+      <h2 class="section-title">نحن<br><span class="accent">نُعيد</span><br>تعريف<br>الهندسة</h2>
+      <p class="about-desc">في Eco Drive، نؤمن أن الطلاب الهندسة هم صانعو التغيير. رسالتنا: بناء تقنيات مستدامة تُحرك المملكة نحو مستقبل مستدام و ذكي.</p>
+    </div>
+    <div class="fields-grid">
+      <div class="field-car"><div class="field-num">/01</div><div class="icon-car"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="field-name">السيارات الكهربائية</div><div class="field-desc">نصمم ونبني مركبات كهربائية عالية الكفاءة من الصفر بأيدي الطلاب.</div></div>
+      <div class="field-card"><div class="field-num">/02</div><div class="field-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/><circle cx="9" cy="16" r="1" fill="currentColor"/><circle cx="15" cy="16" r="1" fill="currentColor"/></svg></div><div class="field-name">الأنظمة الذاتية</div><div class="field-desc">نطور خوارزميات الرؤية الحاسوبية وأنظمة التحكم للقيادة الذاتية.</div></div>
+      <div class="field-card"><div class="field-num">/03</div><div class="field-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M19.07 19.07l-1.41-1.41M4.93 19.07l1.41-1.41M21 12h-2M5 12H3M12 21v-2M12 5V3"/></svg></div><div class="field-name">الروبوتات الذكية</div><div class="field-desc">نصمم روبوتات ذكية قادرة على التعلم والتكيّف لحل تحديات العالم الحقيقي.</div></div>
+      <div class="field-energy"><div class="field-num">/04</div><div class="icon-energy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div><div class="field-name">الاستدامة</div><div class="field-desc">كل مشروع نبنيه يلتزم بمعايير الطاقة النظيفة والأثر البيئي الصفري.</div></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PROJECTS — INLINE SPLIT (no popup) -->
+  <section class="section-projects" id="projects">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">المشاريع المميزة</div>
+        <h2 class="section-title" style="font-size:2.8rem">مشاريع <span class="accent">النادي</span></h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterProjects('all',this)">الكل</button>
+        <button class="filter-btn" onclick="filterProjects('كفو 1',this)">كفو 1</button>
+        <button class="filter-btn" onclick="filterProjects('كفو 2',this)">كفو 2</button>
+        <button class="filter-btn" onclick="filterProjects('قارة',this)">قارة</button>
+      </div>
+    </div>
+
+    <div class="projects-split">
+
+      <!-- LEFT: detail panel (inline, not popup) -->
+      <div class="project-detail" id="project-detail">
+        <div class="pd-empty" id="pd-empty">
+              <img src="Eco_DriveLogo.png" alt="logo" title="Home logo">
+          <p>Projects_ZONE</p>
+          <p class="hint">اضغط على مشروع لعرض التفاصيل</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: list -->
+      <div class="project-list" id="project-list">
+
+        <div class="project-item"
+          data-tag="كفو 1"
+          data-title="كفو 1"
+          data-desc="المركبة الكهربائية الموفرة للطاقة (فئة الأربع عجلات). مثّلت كفو 1 إحدى أولى الخطوات الطموحة للفريق نحو المنافسات الدولية في مجال كفاءة الطاقة. صُممت المركبة وصُنعت بالكامل بواسطة طلاب النادي، حيث خاض الفريق رحلة هندسية متكاملة شملت التصميم الميكانيكي واختيار المواد المناسبة وتصنيع الهيكل وتجميع الأنظمة المختلفة. شاركت المركبة في ماراثون شل البيئية 2023 في إندونيسيا، وتمكنت من اجتياز الفحص الفني للمسابقة بعد استيفاء متطلبات السلامة والمعايير الهندسية المعتمدة."
+          data-year="2023" data-team="18 أعضاء" data-status="مكتمل"
+          data-ptag="كفو 1" data-img="KFU2023.jpg"
+          data-img2="2023Team.jpg"
+          onclick="selectProject(this)">
+          <div>
+            <div class="pi-meta"><div class="pi-dot"></div>كفو 1</div>
+            <div class="pi-name">كفو 1</div>
+          </div>
+          <span class="pi-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+        </div>
+
+        <div class="project-item"
+          data-tag="كفو 2"
+          data-title="كفو 2"
+          data-desc="المركبة الكهربائية الموفرة للطاقة (فئة الأربع عجلات). جاء مشروع كفو 2 ليعكس تطور الخبرات الهندسية لدى أعضاء الفريق ورغبتهم في الوصول إلى مستويات أعلى من الجودة والدقة. ركّز الفريق خلال مراحل التطوير على تحسين توزيع المكونات، وتقليل الوزن، ورفع موثوقية الأنظمة الكهربائية والميكانيكية. مثّلت المركبة الفريق في ماراثون شل البيئية 2025 في دولة قطر ضمن فئة الأربع عجلات، وتمكنت من اجتياز الفحص الفني بنجاح."
+          data-year="2025" data-team="14 أعضاء" data-status="مكتمل"
+          data-ptag="كفو 2" data-img="KFU2.jpg"
+          data-img2="KFU2TEAM.jpg"
+          onclick="selectProject(this)">
+          <div>
+            <div class="pi-meta"><div class="pi-dot blue"></div>كفو 2</div>
+            <div class="pi-name">كفو 2</div>
+          </div>
+          <span class="pi-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+        </div>
+
+        <div class="project-item"
+          data-tag="قارة"
+          data-title="قارة"
+          data-desc="المركبة الكهربائية الموفرة للطاقة (فئة الثلاث عجلات). تمثل قارة 2026 توجهاً هندسياً مختلفاً للفريق من خلال الانتقال إلى فئة المركبات ثلاثية العجلات، والتي تتطلب حلولاً تصميمية خاصة لتحقيق التوازن بين الاستقرار وخفة الوزن والكفاءة العالية في استهلاك الطاقة. شاركت المركبة في ماراثون شل البيئية في دولة قطر، حيث نجحت في اجتياز الفحص الفني ودخول الحلبة والمنافسة رسمياً."
+          data-year="2026" data-team="13 أعضاء" data-status="مكتمل"
+          data-ptag="قارة" data-img="QARA.jpg"
+          data-img2="QARATEAM.jpg"
+          onclick="selectProject(this)">
+          <div>
+            <div class="pi-meta"><div class="pi-dot gray"></div>قارة</div>
+            <div class="pi-name">قارة</div>
+          </div>
+          <span class="pi-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">Eco Drive</div>
+        <p>نادي من كلية الهندسة بجامعة الملك فيصل.<br>نبني السيارات الكهربائية، الأنظمة الذاتية، والروبوتات الذكية.</p>
+         <div class="footer-social">
+        <a href="https://x.com/EcoDrivekfu" target="_blank" title="X"><img src="Twitter.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+       <a href="https://www.linkedin.com/company/eco-drive-kfu-club/" target="_blank" title="LinkedIn"><img src="LinkedIn.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+      <a href="https://www.instagram.com/ecodrivekfu?igsh=Nmx0NHloaXk2OThz" target="_blank" title="Instagram"><img src="Instagram.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+      <a href="https://www.tiktok.com/@ecodrivekfu?_r=1&_t=ZS-96rNpiY32wh" target="_blank" title="TikTok">
+      <img src="Tik_Tok.png" width="20" height="20" style="object-fit:contain; display:block;">
+  </a>
+</div>
+      </div>
+      <div class="footer-col"><h4>التنقل</h4><a onclick="switchPage('home')">الرئيسية</a><a onclick="switchPage('about')">من نحن</a></div>
+      <div class="footer-col"><h4>التواصل</h4><a href="https://www.instagram.com/ecodrivekfu?igsh=Nmx0NHloaXk2OThz" target="_blank" title="Instagram">Instagram</a><a href="https://x.com/EcoDrivekfu" target="_blank" title="X">X</a><a href="https://www.linkedin.com/company/eco-drive-kfu-club/" target="_blank" title="LinkedIn">LinkedIn</a><a href="https://www.tiktok.com/@ecodrivekfu?_r=1&_t=ZS-96rNpiY32wh" target="_blank" title="TikTok">TikTok</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>جامعة الملك فيصل • كلية الهندسة</span>
+      <span>© 2026 نادي Eco Drive • جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ============================= ABOUT PAGE ============================= -->
+<div class="page" id="page-about">
+
+  <section class="about-hero">
+    <div class="grid-bg"></div>
+    <div class="glow"></div>
+    <div class="about-hero-inner">
+      <div class="section-label">ABOUT_US</div>
+      <h1 class="about-hero-title">من <span style="color:var(--lime)">نحن</span></h1>
+      <p class="about-hero-sub">تعرّف على نادي Eco Drive – رحلتنا، رؤيتنا، رسالتنا، والفريق الذي يقف خلف كل مشروع.</p>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--border)"></div>
+  </section>
+
+  <section class="origin-section">
+    <div>
+      <div class="section-label">نبذة عن النادي</div>
+      <h2 class="section-title">من هنا بدأت <span class="journey">الرحلة</span></h2>
+      <div style="margin-top:32px">
+        <div class="origin-stat-row"><span class="osr-label">عضو نشط</span><span class="osr-val">+26</span></div>
+        <div class="origin-stat-row"><span class="osr-label">مشروع مميز</span><span class="osr-val">3</span></div>
+        <div class="origin-stat-row"><span class="osr-label">سنة التأسيس</span><span class="osr-val">2023</span></div>
+      </div>
+      <div class="origin-quote">
+        <div class="oq-label">ORIGIN_STORY</div>
+        <p>"نؤمن أن الهندسة ليست مجرد نظريات — بل مشاريع تُغيّر العالم"</p>
+      </div>
+    </div>
+    <div>
+      <div class="info-card"><div class="ic-header">التأسيس <span class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--lime)"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span></div><p>تأسس نادي Eco Drive في جامعة الملك فيصل كمبادرة طلابية هندسية تهدف لتحويل المعرفة النظرية إلى تطبيقات واقعية.</p></div>
+      <div class="info-card"><div class="ic-header">الفئة المستهدفة <span class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--lime)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span></div><p>طلاب وطالبات كلية الهندسة بمختلف التخصصات – كهربائية، ميكانيكية، حاسب، واتصالات – المهتمون بالابتكار والتقنية.</p></div>
+      <div class="info-card"><div class="ic-header">المجال <span class="ic-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--lime)"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span></div><p>السيارات الكهربائية، الأنظمة المدمجة، الروبوتات، الطاقة المتجددة، وإنترنت الأشياء.</p></div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="mv-section">
+    <div class="mv-grid">
+      <div class="mv-card">
+        <div class="mvc-label">VISION</div>
+        <div class="mvc-header">الرؤية <div class="mvc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div>
+        <p>أن نكون النادي الهندسي الرائد على مستوى المملكة في تطوير المشاريع التقنية المستدامة، وأن نُمثّل جامعة الملك فيصل في المحافل والمنافسات الدولية بابتكارات تُحدث فرقاً حقيقياً.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mvc-label">MISSION</div>
+        <div class="mvc-header">الرسالة <div class="mvc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div></div>
+        <p>تمكين الطلاب والطالبات من تحويل معارفهم الهندسية إلى مشاريع ملموسة من خلال بيئة تعاونية تجمع بين التصميم والبرمجة والتصنيع، مع التركيز على الطاقة النظيفة والتقنيات الذكية.</p>
+      </div>
+    </div>
+    <div class="goals-card">
+      <div class="gc-header">الأهداف <div class="mvc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div></div>
+      <div class="goals-grid">
+        <div class="goal-item"><div class="gi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><span>تعزيز التعلم التطبيقي</span></div>
+        <div class="goal-item"><div class="gi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div><span>تطوير المهارات الهندسية</span></div>
+        <div class="goal-item"><div class="gi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div><span>بناء مشاريع تقنية مبتكرة</span></div>
+        <div class="goal-item"><div class="gi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span>تشجيع العمل الجماعي</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ORG CHART -->
+  <section class="org-section">
+    <!-- Title aligned RIGHT -->
+    <div class="org-header">
+      <div style="text-align:center">
+        <div class="section-label">ECO_STRUCTURE</div>
+        <h2 class="section-title">الهيكل <span class="accent">التنظيمي</span></h2>
+      </div>
+    </div>
+
+    <div class="org-chart">
+
+      <!-- President -->
+      <div class="org-level">
+        <div class="org-node">
+          <div class="org-avatar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="on-name">رئيس النادي</div>
+          <div class="on-role">مهند العامر</div>
+        </div>
+      </div>
+      <div class="org-connector-v"></div>
+
+      <!-- VP -->
+      <div class="org-level">
+        <div class="org-node">
+          <div class="org-avatar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="on-name">نائب رئيس النادي</div>
+          <div class="on-role">لمى بودي</div>
+        </div>
+      </div>
+      <div class="org-connector-v"></div>
+
+      <!-- 5 Committee Heads -->
+      <div style="position:relative;width:100%;max-width:980px;margin:0 auto">
+        <div style="height:1px;background:var(--lime);width:84%;margin:0 auto"></div>
+       <div style="display:flex;justify-content:space-around;padding-top:0">
+  <div class="org-branch"><div class="org-branch-line"></div>
+    <div class="org-node"><div class="org-avatar sm"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name">رئيس لجنة الإعلام</div><div class="on-role">وله آل ساري</div></div>
+  </div>
+  <div class="org-branch"><div class="org-branch-line"></div>
+    <div class="org-node"><div class="org-avatar sm"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name">رئيس قسم الهندسة الكهربائية</div><div class="on-role">عبدالغفار القاعي</div></div>
+  </div>
+  <div class="org-branch"><div class="org-branch-line"></div>
+    <div class="org-node"><div class="org-avatar sm"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name">رئيس قسم الهندسة الميكانيكية</div><div class="on-role">عبدالعزيز طه</div></div>
+  </div>
+</div>
+      </div>
+
+      <!-- Members — 2 rows of 8 = 16 members -->
+      <div class="members-label">الأعضاء</div>
+      <div class="members-grid">
+        <!-- Row 1 -->
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">يزن ربايعه</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">احمد الغامدي</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">امجد الحاج</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">يمان حماش</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">سعد المبيريك</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">حبيبه هاني</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">هديل العبدالله</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">لمى الصالح</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">مؤيد غانم</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">مهند الملحم</div><div class="on-role">عضو</div></div>
+        <!-- Row 2 -->
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">سعود الصفية</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">عبدالله الزبير</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">جاسم المكحل</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">عمر الجعفري</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">عبدالرحمن الحمل</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">محمد السعيد</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">علي الحماد</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">نواف بودي</div><div class="on-role">عضو</div></div>
+        <div class="org-node"><div class="org-avatar xs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="on-name" style="font-size:.72rem">علي الهلال</div><div class="on-role">عضو</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">Eco Drive</div>
+        <p>نادي من كلية الهندسة بجامعة الملك فيصل.<br>نبني السيارات الكهربائية، الأنظمة الذاتية، والروبوتات الذكية.</p>
+         <div class="footer-social">
+        <a href="https://x.com/EcoDrivekfu" target="_blank" title="X"><img src="Twitter.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+       <a href="https://www.linkedin.com/company/eco-drive-kfu-club/" target="_blank" title="LinkedIn"><img src="LinkedIn.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+      <a href="https://www.instagram.com/ecodrivekfu?igsh=Nmx0NHloaXk2OThz" target="_blank" title="Instagram"><img src="Instagram.png" width="20" height="20" style="object-fit:contain; display:block;"></a>
+      <a href="https://www.tiktok.com/@ecodrivekfu?_r=1&_t=ZS-96rNpiY32wh" target="_blank" title="TikTok">
+      <img src="Tik_Tok.png" width="20" height="20" style="object-fit:contain; display:block;">
+  </a>
+</div>
+      </div>
+      <div class="footer-col"><h4>التنقل</h4><a onclick="switchPage('home')">الرئيسية</a><a onclick="switchPage('about')">من نحن</a></div>
+      <div class="footer-col"><h4>التواصل</h4><a href="https://www.instagram.com/ecodrivekfu?igsh=Nmx0NHloaXk2OThz" target="_blank" title="Instagram">Instagram</a><a href="https://x.com/EcoDrivekfu" target="_blank" title="X">X</a><a href="https://www.linkedin.com/company/eco-drive-kfu-club/" target="_blank" title="LinkedIn">LinkedIn</a><a href="https://www.tiktok.com/@ecodrivekfu?_r=1&_t=ZS-96rNpiY32wh" target="_blank" title="TikTok">TikTok</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>جامعة الملك فيصل • كلية الهندسة</span>
+      <span>© 2026 نادي Eco Drive • جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+/* PAGE SWITCH */
+function switchPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  document.getElementById('nav-' + page).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const vid = document.getElementById('hero-video');
+  if (vid) { page === 'home' ? vid.play() : vid.pause(); }
+}
+
+/* PROJECT FILTER */
+function filterProjects(filter, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.project-item').forEach(item => {
+    item.style.display = (filter === 'all' || item.dataset.tag === filter) ? 'flex' : 'none';
+  });
+  const visibleItems = Array.from(document.querySelectorAll('.project-item')).filter(i => i.style.display !== 'none');
+  if (visibleItems.length > 0) selectProject(visibleItems[0]);
+}
+
+/* RESET DETAIL */
+function resetDetail() {
+  document.querySelectorAll('.project-item').forEach(p => p.classList.remove('selected'));
+  const det = document.getElementById('project-detail');
+  det.classList.remove('active');
+  det.innerHTML = `
+    <div class="pd-empty">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:#2a2a2a"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      <p>FOCUS_ZONE</p>
+      <p class="hint">اضغط على مشروع لعرض التفاصيل</p>
+    </div>`;
+}
+
+/* SELECT PROJECT — inline panel with 2-slide slider */
+let _slide = 0;
+
+function selectProject(el) {
+  document.querySelectorAll('.project-item').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  _slide = 0;
+
+  const title   = el.dataset.title;
+  const desc    = el.dataset.desc;
+  const tag     = el.dataset.ptag;
+  const year    = el.dataset.year;
+  const team    = el.dataset.team;
+  const status  = el.dataset.status;
+  const img1    = el.dataset.img  || '';          // الصورة الأولى (نفس data-img الموجود)
+  const img2    = el.dataset.img2 || img1;        // الصورة التانية (اختياري، يرجع للأولى لو مش موجود)
+  const members = el.dataset.members || '';       // "اسم:دور|اسم:دور"
+
+  // ---- Slide 1: صورة المشروع ----
+  const s1 = img1
+    ? `<img src="${img1}" alt="${title}" onerror="this.style.opacity='0.1'">`
+    : `<div class="pd-slide-placeholder">
+         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+         <p>صورة المشروع</p>
+       </div>`;
+
+  // ---- Slide 2: صورة الفريق + overlay ----
+  const s2bg = img2
+    ? `<img src="${img2}" alt="team" onerror="this.outerHTML='<div class=\\'pd-slide-placeholder\\'><svg width=\\'48\\' height=\\'48\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'1.2\\'><path d=\\'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\\'/><circle cx=\\'9\\' cy=\\'7\\' r=\\'4\\'/></svg><p>صورة الفريق</p></div>'">`
+    : `<div class="pd-slide-placeholder">
+         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+         <p>صورة الفريق</p>
+       </div>`;
+
+  const membersHTML = members
+    ? members.split('|').map(m => {
+        const [name, role] = m.split(':');
+        return `<div class="pd-team-member">
+          <span>${name||''}</span>
+          <span class="tm-role">${role||'عضو'}</span>
+        </div>`;
+      }).join('')
+    : '';
+
+  const det = document.getElementById('project-detail');
+  det.classList.add('active');
+
+  det.innerHTML = `
+    <div class="pd-slider" id="pd-slider">
+      <div class="pd-slides" id="pd-slides">
+
+        <!-- الشريحة 1 -->
+        <div class="pd-slide">
+          ${s1}
+          <div class="pd-tag">${tag}</div>
+        </div>
+
+        <!-- الشريحة 2 -->
+        <div class="pd-slide">
+          ${s2bg}
+          <div class="pd-slide-team">
+            <div class="pd-team-box">
+              <span class="tb-label">PROJECT TEAM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- سهم يمين (السابق في RTL) -->
+      <div class="slider-arrow prev" onclick="slideMove(-1)">&#8250;</div>
+      <!-- سهم يسار (التالي في RTL) -->
+      <div class="slider-arrow next" onclick="slideMove(1)">&#8249;</div>
+      <div class="slider-dots">
+        <div class="slider-dot on" onclick="slideTo(0)"></div>
+        <div class="slider-dot"   onclick="slideTo(1)"></div>
+      </div>
+    </div>
+
+    <div class="pd-body">
+      <div class="pd-title">${title}</div>
+      <div class="pd-desc">${desc}</div>
+      <div class="pd-meta">
+        <div class="pd-meta-item"><span class="mm-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>${year}</div>
+        <div class="pd-meta-item"><span class="mm-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>${team}</div>
+        <div class="pd-meta-item"><span class="mm-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span>${status}</div>
+      </div>
+    </div>`;
+}
+
+/* تحريك الـ slider */
+function slideTo(idx) {
+  _slide = idx;
+  const w = document.getElementById('pd-slides');
+  if (!w) return;
+  // كل slide = 50% من الـ wrapper = 100% مرئي
+  // RTL: للتنقل للأمام (slide 1→2) نحرك للجهة السالبة
+  w.style.transform = `translateX(${idx * -50}%)`;
+  document.querySelectorAll('.slider-dot').forEach((d, i) =>
+    d.classList.toggle('on', i === idx));
+}
+
+function slideMove(dir) {
+  // prev سهم (dir=-1) → slide السابق، next (dir=1) → slide التالي
+  let next = _slide + dir;
+  if (next < 0) next = 1;
+  if (next > 1) next = 0;
+  slideTo(next);
+}
+
+/* AUTOPLAY */
+window.addEventListener('load', () => {
+  const vid = document.getElementById('hero-video');
+  if (vid) {
+    vid.play().catch(() => {
+      document.getElementById('video-fallback').style.display = 'flex';
+      vid.style.display = 'none';
+    });
+  }
+});
+function goToProject(tag) {
+  // Switch to home page without scrolling to top
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-home').classList.add('active');
+  document.getElementById('nav-home').classList.add('active');
+  
+  // Then select project and scroll to it
+  setTimeout(() => {
+    const item = document.querySelector(`[data-tag="${tag}"]`);
+    if (item) {
+      selectProject(item);
+      item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, 100);
+}
+</script>
+</body>
+</html>
